@@ -7,8 +7,12 @@ const buttonStyles = {
   rectangularBig: "py-2 px-6 rounded-md",
 };
 
-const PrimaryButton = ({ size, text }) => {
-  return <button className={`text-white bg-primary-cyan hover:bg-primary-cyan-light ${buttonStyles[size]}`}>{text}</button>;
+const PrimaryButton = ({ size, text, onClick }) => {
+  return (
+    <button onClick={onClick} className={`text-white bg-primary-cyan hover:bg-primary-cyan-light font-bold ${buttonStyles[size]}`}>
+      {text}
+    </button>
+  );
 };
 
 export default PrimaryButton;
