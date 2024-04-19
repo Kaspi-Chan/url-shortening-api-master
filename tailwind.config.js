@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "primary-cyan": "hsl(180, 66%, 49%)",
+        "primary-cyan-light": "hsl(181 55% 74%)",
         "primary-violet": "hsl(257, 27%, 26%)",
         "secondary-red": "hsl(0, 87%, 67%)",
         "neutral-gray": "hsl(0, 0%, 75%)",
@@ -13,14 +14,14 @@ export default {
         "neutral-dark-violet": "hsl(260, 8%, 14%)",
       },
       fontFamily: {
-        'poppins': ["Poppins", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       fontSize: {
-        'base': '1.125rem',
+        base: "1.125rem",
       },
       fontWeight: {
-        'normal': '500',
-      }
+        normal: "500",
+      },
     },
   },
   plugins: [],
