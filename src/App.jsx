@@ -3,8 +3,9 @@ import Header from "./components/Navbar";
 
 function App() {
   return (
-    <main>
+    <main className="container mx-auto">
       <Header />
+
     </main>
   );
 }
