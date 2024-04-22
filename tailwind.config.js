@@ -22,6 +22,10 @@ export default {
       fontWeight: {
         normal: "500",
       },
+      backgroundImage: {
+        'shorten-mobile': "url('./src/assets/images/bg-shorten-mobile.svg')",
+        'shorten-desktop': "url('./src/assets/images/bg-shorten-desktop.svg')",
+      }
     },
   },
   plugins: [],

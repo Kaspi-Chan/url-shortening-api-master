@@ -7,9 +7,12 @@ const buttonStyles = {
   rectangularBig: "py-2 px-6 rounded-md text-base",
 };
 
-const PrimaryButton = ({ size = 'roundedSmall', text, onClick }) => {
+const PrimaryButton = ({ size = "roundedSmall", text, onClick }) => {
   return (
-    <button onClick={onClick} className={`text-white bg-primary-cyan hover:bg-primary-cyan-light font-bold ${buttonStyles[size]}`}>
+    <button
+      onClick={onClick}
+      className={`text-white bg-primary-cyan hover:bg-primary-cyan-light font-bold whitespace-nowrap ${buttonStyles[size]}`}
+    >
       {text}
     </button>
   );
