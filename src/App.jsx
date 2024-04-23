@@ -8,7 +8,9 @@ function App() {
     <main className="overflow-x-hidden relative">
       <Header />
       <HeroSection />
-      <LinkSection />
+      <div className="bg-stone-100">
+        <LinkSection />
+      </div>
     </main>
   );
 }

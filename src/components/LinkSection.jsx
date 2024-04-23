@@ -31,7 +31,7 @@ const LinkSection = () => {
   };
 
   return (
-    <section className="container mx-auto md:px-7 2xl:px-20 px-5 bg-stone-100 pb-10">
+    <section className="container mx-auto mt-28 md:px-7 2xl:px-20 px-5 pb-10 relative bottom-[73px]">
       <LinkForm onSubmit={handleSubmit} error={error} />
       <ul className="flex flex-col gap-4">
         {urlData.map((urlInfo, index) => {
