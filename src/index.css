@@ -27,3 +27,26 @@ body{
 .nav-responsive {
   width: calc(100% - 2 * 1.75rem)
 }
+
+.cards-container{
+  position: relative;
+}
+.cards-container::after{
+  content: '';
+  display: block;
+  width: 10px;
+  height: 90%;
+  position: absolute;
+  background-color: hsl(180, 66%, 49%);
+  z-index: 1;
+  left: calc(50% - 5px);
+}
+
+@media (min-width: 1024px) {
+  .cards-container::after{
+    top: 40%;
+    left: 0;
+    width: 90%;
+    height: 10px;
+  }
+}
