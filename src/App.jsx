@@ -3,6 +3,7 @@ import Header from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
 import LinkSection from "./components/LinkSection";
 import StatisticsSection from "./components/StatisticsSection";
+import CTA from "./components/CTA";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <LinkSection />
         <StatisticsSection />
       </div>
+      <CTA />
     </main>
   );
 }
