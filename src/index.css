@@ -42,6 +42,10 @@ body{
   left: calc(50% - 5px);
 }
 
+.svg-image:hover {
+  filter: brightness(0) saturate(100%) invert(99%) sepia(96%) saturate(6604%) hue-rotate(125deg) brightness(86%) contrast(86%);
+}
+
 @media (min-width: 1024px) {
   .cards-container::after{
     top: 40%;

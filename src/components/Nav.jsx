@@ -5,7 +5,7 @@ import HamburgerMenu from "./HamburgerMenu";
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const mobileMenu = (
-    <nav className="nav-responsive md:hidden absolute top-16 sm:top-24 bg-primary-violet py-6 px-4 rounded-lg">
+    <nav className={`nav-responsive md:hidden absolute top-16 sm:top-24 bg-primary-violet py-6 px-4 rounded-lg`}>
       <ul className="flex flex-col items-stretch gap-3 text-center text-white font-bold">
         <li className="cursor-pointer py-2">Features</li>
         <li className="cursor-pointer py-2">Pricing</li>
