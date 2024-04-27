@@ -1,12 +1,15 @@
 import React from "react";
 import FooterLogo from "../assets/images/logo.svg?react";
 import SocialsMenu from "./SocialsMenu";
+import Container from "./Container";
 
 const Footer = () => {
   return (
     <footer className="bg-neutral-dark-violet pt-16 pb-20">
-      <div className="container mx-auto px-5 md:px-7 2xl:px-20 flex flex-col justify-between lg:flex-row gap-10 text-center lg:text-left">
-        <FooterLogo style={{ color: "#FFFFFF" }} className="mx-auto lg:mx-0 basis-1/3"/>
+      <Container className="flex flex-col justify-between lg:flex-row gap-10 text-center lg:text-left">
+        <a href="#">
+          <FooterLogo style={{ color: "#FFFFFF" }} className="mx-auto lg:mx-0 basis-1/3"/>
+        </a>
         <div className="text-white">
           <h5 className="font-semibold mb-4">Features</h5>
           <ul className="text-neutral-grayish-violet flex flex-col justify-center  gap-2">
@@ -33,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
         <SocialsMenu />
-      </div>
+      </Container>
     </footer>
   );
 };

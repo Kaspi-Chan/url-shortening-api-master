@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ShortenedLinkCard from "./ShortenedLinkCard";
 import LinkForm from "./linkForm";
+import Container from "./Container";
 
 const LinkSection = () => {
   const [error, setError] = useState(null);
@@ -31,14 +32,14 @@ const LinkSection = () => {
   };
 
   return (
-    <section className="container mx-auto mt-28 md:px-7 2xl:px-20 px-5 pb-10 relative bottom-[73px]">
+    <Container tag="section" className="mt-28 pb-10 relative bottom-[73px]">
       <LinkForm onSubmit={handleSubmit} error={error} />
       <ul className="flex flex-col gap-4">
         {urlData.map((urlInfo, index) => {
           return <ShortenedLinkCard key={index + urlInfo.url} url={urlInfo.url} shortUrl={urlInfo.shortUrl} />;
         })}
       </ul>
-    </section>
+    </Container>
   );
 };
 

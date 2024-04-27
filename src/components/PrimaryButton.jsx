@@ -7,15 +7,18 @@ const buttonStyles = {
   rectangularBig: "py-2 px-8 rounded-md text-base",
 };
 
-const PrimaryButton = ({ size = "roundedSmall", text, onClick, ...props }) => {
+const PrimaryButton = ({ size = "roundedSmall", text, onClick, href, type = "button", ...props }) => {
+  const Component = href ? 'a' : 'button';
+  const className = `text-white text-center bg-primary-cyan hover:bg-primary-cyan-light font-bold whitespace-nowrap block ${buttonStyles[size]}`;
+
+  const specificProps = href ? { href, onClick } : {onClick, type}
   return (
-    <button
+    <Component
       {...props}
-      onClick={onClick}
-      className={`text-white bg-primary-cyan hover:bg-primary-cyan-light font-bold whitespace-nowrap block ${buttonStyles[size]}`}
-    >
+      {...specificProps}
+      className={className}>
       {text}
-    </button>
+    </Component>
   );
 };
 

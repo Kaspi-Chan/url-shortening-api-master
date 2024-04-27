@@ -4,6 +4,7 @@ import brandRecognitionSvg from "../assets/images/icon-brand-recognition.svg";
 import detailedRecordsSvg from "../assets/images/icon-detailed-records.svg";
 import fullyCustomizableSvg from "../assets/images/icon-fully-customizable.svg";
 import { data } from "autoprefixer";
+import Container from "./Container";
 
 const cardInfo = [
   {
@@ -25,7 +26,7 @@ const cardInfo = [
 
 const StatisticsSection = () => {
   return (
-    <section className="container mx-auto px-5 md:px-7 2xl:px-20">
+    <Container tag="section">
       <h3 className="text-primary-violet font-bold text-2xl lg:text-4xl mb-4 text-center">Advanced Statistics</h3>
       <p className="text-neutral-gray text-base font-normal mb-20 text-center">
         Track how your links are performing across the web with
@@ -37,7 +38,7 @@ const StatisticsSection = () => {
           <StatisticsCard key={card.title} img={card.image} text={card.text} title={card.title} style={{ top: `${index * 40}px` }} />
         ))}
       </div>
-    </section>
+    </Container>
   );
 };
 
