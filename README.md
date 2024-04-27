@@ -34,13 +34,13 @@ Users should be able to:
 ### Screenshot
 
 #### Desktop
-![](./screenshots/desktop-screenshot.png.jpg)
+![](./screenshots/desktop-screenshot.png)
 
 #### Mobile
-![](./screenshots/mobile-screenshot.png.jpg)
+![](./screenshots/mobile-screenshot.png)
 
 #### Mobile with menu opened
-![](./screenshots/mobile-screenshot-with-menu.png.png.jpg)
+![](./screenshots/mobile-screenshot-with-menu.png)
 
 ### Links
 
