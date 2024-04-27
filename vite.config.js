@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     svgr()
   ],
-  base: '/url-shortening-api-master/'
+  base: './url-shortening-api-master/'
 })
