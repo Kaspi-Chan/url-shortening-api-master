@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <footer className="bg-neutral-dark-violet pt-16 pb-20">
       <Container className="flex flex-col justify-between lg:flex-row gap-10 text-center lg:text-left">
-        <a href="#">
-          <FooterLogo style={{ color: "#FFFFFF" }} className="mx-auto lg:mx-0 basis-1/3"/>
+        <a href="#" className="mx-auto lg:mx-0 basis-1/3">
+          <FooterLogo style={{ color: "#FFFFFF" }} />
         </a>
         <div className="text-white">
           <h5 className="font-semibold mb-4">Features</h5>

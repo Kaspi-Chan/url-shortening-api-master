@@ -10,7 +10,7 @@ const HeroSection = () => {
         <h1 className="text-4xl lg:text-6xl xl:text-7xl lg:leading-tight xl:leading-tight text-primary-violet font-bold mb-3">
           More than just shorter links
         </h1>
-        <p className="text-neutral-gray text-lg font-normal mb-6 xl:mr-12">
+        <p className="text-neutral-gray text-lg font-normal mb-6 xl:mr-52">
           Build your brand's recognition and get detailed insights on how your links are performing.
         </p>
         <PrimaryButton size="roundedBig" text={"Get Started"} href='#'/>

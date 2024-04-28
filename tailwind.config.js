@@ -12,6 +12,7 @@ export default {
         "neutral-grayish-violet": "hsl(257, 7%, 63%)",
         "neutral-dark-blue": "hsl(255, 11%, 22%)",
         "neutral-dark-violet": "hsl(260, 8%, 14%)",
+        'neutral-light-gray': 'hsl(228deg 20% 95.1%)',
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

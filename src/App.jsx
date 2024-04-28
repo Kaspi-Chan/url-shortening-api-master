@@ -11,7 +11,7 @@ function App() {
     <main className="overflow-x-hidden relative">
       <Header />
       <HeroSection />
-      <div className="bg-stone-100">
+      <div className="bg-neutral-light-gray">
         <LinkSection />
         <StatisticsSection />
       </div>
